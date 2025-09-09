@@ -42,6 +42,26 @@ const Index = () => {
 
             <Separator className="mb-8" />
 
+            {/* Section Transaction */}
+            <div className="mb-8">
+              <div className="flex items-center gap-2 mb-4">
+                <Building2 className="h-5 w-5 text-official-blue" />
+                <h2 className="text-lg font-semibold text-text-formal">{t('transaction.title')}</h2>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-l-official-blue p-4 rounded-r-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <span className="font-semibold">{t('transaction.date')}</span>
+                    <p className="text-text-formal">09 Septembre 2025</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold">{t('transaction.amount')}</span>
+                    <p className="text-text-formal font-mono text-lg">46 950 €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Section Émetteur */}
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-4">

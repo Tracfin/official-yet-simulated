@@ -1,23 +1,19 @@
 import { Building2, Users, AlertTriangle, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import tracfinLogo from "@/assets/tracfin-logo.png";
-import republiqueLogo from "@/assets/republique-logo.png";
+import tracfinLogo from "@/assets/tracfin-logo-circular.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-document-bg">
       {/* En-tête officiel */}
-      <header className="bg-official-blue text-white py-4 px-6">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <img src={republiqueLogo} alt="République Française" className="h-12" />
-            <div>
-              <h2 className="text-lg font-semibold">République Française</h2>
-              <p className="text-sm opacity-90">Ministère de l'Économie et des Finances</p>
-            </div>
+      <header className="bg-official-blue text-white py-6 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+          <img src={tracfinLogo} alt="TRACFIN" className="h-20 mb-4" />
+          <div>
+            <h2 className="text-xl font-semibold">République Française</h2>
+            <p className="text-sm opacity-90">Ministère de l'Économie et des Finances</p>
           </div>
-          <img src={tracfinLogo} alt="TRACFIN" className="h-12" />
         </div>
       </header>
 
